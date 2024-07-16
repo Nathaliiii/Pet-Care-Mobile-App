@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/petlogin"
+    tools:context=".LoginActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroupUserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonCaregiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caregiver"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:layout_below="@id/radioGroupUserType"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewRegisterMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account yet? Register here."
+        android:layout_below="@id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonCustomerRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Register"
+        android:layout_below="@id/textViewRegisterMessage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonCaregiverRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caregiver Register"
+        android:layout_below="@id/textViewRegisterMessage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

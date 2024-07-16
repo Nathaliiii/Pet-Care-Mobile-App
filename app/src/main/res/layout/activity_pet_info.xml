@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/petinfo"
+    tools:context=".PetInfoActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a Post"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPetName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="16dp"
+        android:hint="Pet Name" />
+
+    <EditText
+        android:id="@+id/etPetAge"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/etPetName"
+        android:layout_marginTop="8dp"
+        android:hint="Pet Age" />
+
+    <EditText
+        android:id="@+id/etPetBreed"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Pet Breed"
+        android:layout_below="@id/etPetAge"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etPetSex"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/etPetBreed"
+        android:layout_marginTop="8dp"
+        android:hint="Pet Sex" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/etPetSex"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/etBodyColor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:hint="Body Color" />
+
+        <EditText
+            android:id="@+id/etEyesColor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:layout_below="@id/etBodyColor"
+            android:hint="Eyes Color" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

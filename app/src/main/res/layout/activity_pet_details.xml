@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PetDetailsActivity"
+    android:background="@drawable/petdetails">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Details of Pets"
+        android:textSize="24sp"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Name: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvPetAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Age: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvPetBreed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Breed: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvPetSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Sex: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvBodyColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Color: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvEyesColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eyes Color: "
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"/>
+
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Book Now"/>
+    </LinearLayout>
+</LinearLayout>

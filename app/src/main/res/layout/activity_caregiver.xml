@@ -1,0 +1,105 @@
+<!-- activity_caregiver.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/petdetails"
+    tools:context=".caregivermyaccount">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Caregiver Name -->
+    <TextView
+        android:id="@+id/textViewCaregiverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caregiver Name"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextCaregiverName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Caregiver Name"
+        android:layout_below="@id/textViewCaregiverName"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <!-- Caregiver Email -->
+    <TextView
+        android:id="@+id/textViewCaregiverEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caregiver Email"
+        android:layout_below="@id/editTextCaregiverName"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCaregiverEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Caregiver Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/textViewCaregiverEmail"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <!-- Caregiver Address -->
+    <TextView
+        android:id="@+id/textViewCaregiverAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caregiver Address"
+        android:layout_below="@id/editTextCaregiverEmail"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCaregiverAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Caregiver Address"
+        android:layout_below="@id/textViewCaregiverAddress"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <!-- Caregiver Contact Number -->
+    <TextView
+        android:id="@+id/textViewCaregiverContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caregiver Contact Number"
+        android:layout_below="@id/editTextCaregiverAddress"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCaregiverContact"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Caregiver Contact Number"
+        android:inputType="phone"
+        android:layout_below="@id/textViewCaregiverContact"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/editTextCaregiverContact"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
